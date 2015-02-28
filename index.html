@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zane Wolfgang Pickett</title>
-
+  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     
     <style>
@@ -126,8 +126,15 @@
             -ms-transform: translateY(-50%);
              -o-transform: translateY(-50%);
                 transform: translateY(-50%);
-        text-align: center;
         font-size: 12em;
+      }
+      
+      .icon-zane {
+        text-align: right;
+      }
+      
+      #name {
+        font-size: 0.25em;
       }
       
       /* Custom, iPhone Retina */ 
@@ -174,8 +181,12 @@
   </head>
   <body>
     
-    <div id="logo">
-      <div class="icon-zane"></div>
+    <div id="logo" class="row">
+      <div class="hidden-xs col-sm-6 icon-zane"></div>
+      <div class="visible-xs col-xs-12 icon-zane" style="text-align: center;"></div>
+      <div class="hidden-xs col-sm-6">
+        <div id="name">Zane<br>Wolfgang<br>Pickett</div>
+      </div>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

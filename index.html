@@ -17,7 +17,7 @@
           "https://plus.google.com/+ZanePickett/",
           "https://www.linkedin.com/in/zanewolfgangpickett",
           "http://steamcommunity.com/id/sirwolfgang/",
-          "https://www.freebase.com/m/0130mchr"] 
+          "https://www.freebase.com/m/0130mchr"]
     }
     </script>
 
@@ -38,7 +38,7 @@
              -o-transform-style: preserve-3d;
                 transform-style: preserve-3d;
       }
-      
+
       .container {
         position: relative;
         top: 50%;
@@ -47,7 +47,24 @@
             -ms-transform: translateY(-50%);
              -o-transform: translateY(-50%);
                 transform: translateY(-50%);
-        font-size: 12em;
+
+      }
+
+      ul {
+        margin-top: 50px;
+        padding: 0;
+      }
+
+      ul a:hover {
+        text-decoration: none;
+      }
+
+      ul li {
+        font-size: 4vw;
+        list-style: none;
+        display: inline;
+        margin: 0 2vw;
+        color: white;
       }
 
       @font-face {
@@ -146,6 +163,7 @@
 
       #name {
         font-size: 0.25em;
+        top: 0;
       }
 
       /* Custom, iPhone Retina */
@@ -191,6 +209,31 @@
           <div id="name">Zane<br>Wolfgang<br>Pickett</div>
         </div>
       </div>
+
+        <ul class="hidden-xs text-center">
+          <a href="http://github.com/sirwolfgang">
+            <li class="icon-github"></li>
+          </a>
+          <a href="https://twitter.com/sirw0lfgang">
+            <li class="icon-twitter"></li>
+          </a>
+          <a href="http://steamcommunity.com/id/sirwolfgang/">
+            <li class="icon-steam"></li>
+          </a>
+          <a href="http://sirwolfgang.tumblr.com/">
+            <li class="icon-tumblr"></li>
+          </a>
+          <a href="https://www.facebook.com/ZaneWolfgangPickett">
+            <li class="icon-facebook"></li>
+          </a>
+          <a href="https://www.linkedin.com/in/zanewolfgangpickett">
+            <li class="icon-linkedin"></li>
+          </a>
+          <a href="https://plus.google.com/+ZanePickett/">
+            <li class="icon-google-plus"></li>
+          </a>
+        </ul>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

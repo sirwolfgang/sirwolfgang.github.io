@@ -32,6 +32,22 @@
         background-color: #141414;
         color: #eee;
         height: 100%;
+        -webkit-transform-style: preserve-3d;
+           -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+             -o-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+      }
+      
+      .container {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-size: 12em;
       }
 
       @font-face {
@@ -58,11 +74,11 @@
 
         /* Enable Ligatures ================ */
         -webkit-font-feature-settings: "liga";
-        -moz-font-feature-settings: "liga=1";
-        -moz-font-feature-settings: "liga";
-        -ms-font-feature-settings: "liga" 1;
-        -o-font-feature-settings: "liga";
-        font-feature-settings: "liga";
+           -moz-font-feature-settings: "liga=1";
+           -moz-font-feature-settings: "liga";
+            -ms-font-feature-settings: "liga" 1;
+             -o-font-feature-settings: "liga";
+                font-feature-settings: "liga";
 
         /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
@@ -124,26 +140,6 @@
         content: "\eacf";
       }
 
-      #logo {
-        height: 100%;
-        -webkit-transform-style: preserve-3d;
-           -moz-transform-style: preserve-3d;
-            -ms-transform-style: preserve-3d;
-             -o-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-      }
-
-      #logo > div {
-        position: relative;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-           -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-             -o-transform: translateY(-50%);
-                transform: translateY(-50%);
-        font-size: 12em;
-      }
-
       .icon-zane {
         text-align: right;
       }
@@ -154,36 +150,36 @@
 
       /* Custom, iPhone Retina */
       @media only screen and (min-width : 320px) {
-        #logo > div {
-          font-size: 14em;
+        .row-logo > div {
+          font-size: 1.4em;
         }
       }
 
       /* Extra Small Devices, Phones */
       @media only screen and (min-width : 480px) {
-        #logo > div {
-          font-size: 16em;
+        .row-logo > div {
+          font-size: 1.6em;
         }
       }
 
       /* Small Devices, Tablets */
       @media only screen and (min-width : 768px) {
-        #logo > div {
-          font-size: 18em;
+        .row-logo > div {
+          font-size: 1.8em;
         }
       }
 
       /* Medium Devices, Desktops */
       @media only screen and (min-width : 992px) {
-        #logo > div {
-          font-size: 20em;
+        .row-logo > div {
+          font-size: 2.0em;
         }
       }
 
       /* Large Devices, Wide Screens */
       @media only screen and (min-width : 1200px) {
-        #logo > div {
-          font-size: 22em;
+        .row-logo > div {
+          font-size: 2.2em;
         }
       }
 
@@ -196,11 +192,13 @@
   </head>
   <body>
 
-    <div id="logo" class="row">
-      <div class="hidden-xs col-sm-6 icon-zane"></div>
-      <div class="visible-xs col-xs-12 icon-zane" style="text-align: center;"></div>
-      <div class="hidden-xs col-sm-6">
-        <div id="name">Zane<br>Wolfgang<br>Pickett</div>
+    <div class="container">
+      <div class="row row-logo">
+        <div class="hidden-xs col-sm-6 icon-zane logo"></div>
+        <div class="visible-xs col-xs-12 icon-zane logo" style="text-align: center;"></div>
+        <div class="hidden-xs col-sm-6">
+          <div id="name">Zane<br>Wolfgang<br>Pickett</div>
+        </div>
       </div>
     </div>
 
